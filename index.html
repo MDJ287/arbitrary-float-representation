@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <title>floating point</title>
+    </head>
+    <body>
+        <div id="display-div">
+            <h1>bit values</h1>
+            <table id="number-display-table">
+                <tr>
+                    <th>sign</th>
+                    <th>exponent</th>
+                    <th>mantissa</th>
+                </tr>
+                <tr>
+                    <td id="sign-display"></td>
+                    <td id="exponent-display"></td>
+                    <td id="mantissa-display"></td>
+                </tr>
+                <tr>
+                    <td class="buttons"></td>
+                    <td class="buttons">
+                        <button id="exp-dec">-1</button>
+                        <button id="exp-inc">+1</button>
+                    </td>
+                    <td class="buttons">
+                        <button id="man-dec">-1</button>
+                        <button id="man-inc">+1</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="sign-bit-disp"></td>
+                    <td id="exp-bit-disp"></td>
+                    <td id="man-bit-disp"></td>
+                </tr>
+                <tr>
+                    <td id="sign-value-disp"></td>
+                    <td id="exp-value-disp"></td>
+                    <td id="man-value-disp"></td>
+                </tr>
+            </table>
+            <button id="randomize">randomize bits</button>
+            <button id="dec">-1</button>
+            <button id="inc">+1</button>
+        </div>
+        <div id="value-div">
+        <h1>number value</h1>
+            <table>
+                <tr>
+                    <th>number</th>
+                    <td id="cur-str"></td>
+                </tr>
+                <tr>
+                    <th>calculation</th>
+                    <td id="calculation"></td>
+                </tr>
+                <tr>
+                    <th>special case</th>
+                    <td id="special-case"></td>
+                </tr>
+                <tr>
+                    <th>JS interpretation<br>(only for presets)</th>
+                    <td id="js-version"></td>
+                </tr>
+            </table>
+        </div>
+        <div id="bit-count-div">
+            <h1>bit counts</h1>
+            <label>
+                sign
+                <input type="number" step="1" value="1" min="0" max="1" id="sign-in">
+            </label>
+            <label>
+                exponent
+                <input type="number" step="1" value="8" min="0" max="14" id="exp-in">
+            </label>
+            <label>
+                mantissa
+                <input type="number" step="1" value="23" min="0" id="man-in">
+            </label>
+            <label>
+                total
+                <input disabled type="number" step="1" value="32" min="0" id="total-in">
+            </label>
+        </div>
+        <div id="presets-div">
+            <h1>presets</h1>
+            <button id="pre-16">half precision (16 bit)</button>
+            <button id="pre-32">single precision (32 bit)</button>
+            <button id="pre-64">double precision (64 bit)</button>
+        </div>
+        <div id="extras-div">
+        <h1>extras</h1>
+            <button id="enumerate-all">enumerate all values</button>
+            <table id="enumerated-values"></table>
+        </div>
+    </body>
+</html>

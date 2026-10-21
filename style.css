@@ -1,0 +1,83 @@
+
+* {
+    font-family: monospace;
+}
+
+body {
+    margin: 0;
+    font-size: 20px;
+}
+
+div {
+    padding: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    background-color: #ffffff80;
+
+    th, td {
+        border: 1px solid black;
+        padding: 10px;
+        overflow-wrap: break-word;
+        max-width: 1600px;
+    }
+}
+
+table#number-display-table {
+    th {
+        font-size: 30px;
+    }
+
+    td {
+        font-size: 40px;
+    }
+
+    td.buttons {
+        padding: 0;
+        font-size: 0;
+        text-align: center;
+    }
+}
+
+table#enumerated-values {
+    td {
+        padding: 0;
+        font-size: 14px;
+    }
+}
+
+input[type="number"] {
+    width: 3em;
+    font-size: 20px;
+}
+
+input[type="checkbox"] {
+    width: 2em;
+    height: 2em;
+    margin: 0;
+}
+
+button {
+    font-size: 20px;
+}
+
+div#display-div {
+    background-color: #e0ffff;
+}
+
+div#value-div {
+    background-color: #ffffe0;
+}
+
+div#bit-count-div {
+    background-color: #ffe0ff;
+}
+
+div#presets-div {
+    background-color: #ffe0e0;
+}
+
+div#extras-div {
+    background-color: #e0e0ff;
+}
